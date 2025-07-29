@@ -1,0 +1,16 @@
+import random
+
+answer = 0
+numer_a = random.randint(1, 10)
+numer_b = random.randint(1, 10)
+correct_number = numer_a * numer_b
+
+
+while answer != correct_number:
+    answer = int(input(f"What is {numer_a} multiplied by {numer_b}?"))
+    if answer < correct_number:
+        print("Too low! Try again.")
+    elif answer > correct_number:
+        print("Too high! Try again.")
+    else:
+        print("Congratulations! Your answer is correct!")
